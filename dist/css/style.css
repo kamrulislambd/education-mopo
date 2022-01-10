@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Yeseva+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none; outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    object-fit: cover;
+    transition: all .2s linear;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section CSS */
+
+.header-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 90vh;
+    object-fit: cover;
+    background-color: #1a2d3b75;
+    position: relative;
+    z-index: 1;
+}
+.header-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1A2D3B;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+}
+nav{
+    background: #1a2d3b75;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 1rem;
+    border-right: 1px solid #ddd;
+}
+
+ul li a {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ul li:last-child {
+    border-right: none;
+}
+ul li:hover a{
+    color: #6FED8C;
+}
+.padding-top{padding-top: 10rem;}
+
+.banner-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.banner-text h1 {
+    font-size: 5rem;
+    color: #fff;
+    line-height: 1.7;
+}
+
+.banner-text p {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+    padding: 0 2rem;
+    width: 75%;
+}
+
+.banner-text .enroll-btn {
+    padding: 1.5rem 4rem;
+    color: #212121;
+    background: #6FED8C;
+    font-size: 2rem;
+    border-radius: .5rem;
+    margin-top: 3rem;
+    font-weight: 500;
+}
+.banner-text .enroll-btn:hover{
+    background-color: #12f2fa;
+}
+
+section.about{
+    padding: 15rem 0;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.left-content {
+    flex: 1;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.left-content .title {
+    font-size: 3rem;
+    color: #0F355C;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 2rem 0;
+}
+.left-content .title::before {
+    content: "";
+    width: 8rem;
+    height: .8rem;
+    background: #56EE94;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 1rem;
+}
+
+.mission h3,
+.vission h3 {
+    font-size: 2rem;
+    color: #FFC61B;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.mission p,
+.vission p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.right-content img {
+    width: 80%;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+}
+.right-content{
+    position: relative;
+    overflow:hidden;
+}
+.right-content::after {
+    content: "";
+    width: 80%;
+    height: 90%;
+    left: 90px;
+    bottom: 15px;
+    background: #56EE94;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1.5rem;
+}
+
+/* Programs Section CSS Starts */
+
+.program-section {
+    display: flex;
+    justify-content: space-between;
+}
+.program-section .left-content{
+    flex: 2;
+}
+.program-section .left-content p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+.program-right{
+    flex: 3;
+}
+.icon-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 2rem;
+    grid-row-gap: 5rem;
+    padding: 0 5rem;
+}
+
+.single-box {
+    text-align: center;
+    padding: 2rem;
+    width: 15rem;
+    height: 15rem;
+    line-height: 3rem;
+    border-radius: .8rem;
+    overflow:hidden;
+}
+.single-box h2 {
+    font-size: 1.8rem;
+}
+.single-box.drama {
+    background: #EEEBFE;
+}
+.single-box.dance {
+    background: #FFEEEC;
+}
+
+.single-box.music {
+    background: #E8F2FC;
+}
+
+.single-box.painting {
+    background: #FFEBF4;
+}
+
+.single-box.robotics {
+    background: #DBF9FB;
+}
+
+.single-box.programming {
+    background: #EAF9E4;
+}
+
+/* Programs Section CSS Ends */
