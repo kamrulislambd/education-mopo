@@ -48,6 +48,9 @@ html{
     position: absolute;
     border-radius: 1rem;
 }
+.margin-top-bottom{
+    margin: 7rem 0;
+}
 
 /* Header Section CSS */
 
@@ -127,7 +130,7 @@ ul li:hover a{
     width: 75%;
 }
 
-.banner-text .enroll-btn {
+.enroll-btn {
     padding: 1.5rem 4rem;
     color: #212121;
     background: #6FED8C;
@@ -390,3 +393,35 @@ section.about{
 
 
 /* Facilities Section CSS Ends */
+/* Admission Section CSS Starts */
+
+.admission-section{
+    background-image: url(../images/admission.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #0F355C;
+    padding: 8rem 0;
+}
+.addmission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.admission-left {
+    width: 60%;
+}
+
+.admission-left h2 {
+    color: #fff;
+}
+
+.admission-left p {
+    color: #99ADC6;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Admission Section CSS Ends */
