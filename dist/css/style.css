@@ -29,6 +29,25 @@ html{
     max-width: 1200px;
     margin: 0 auto;
 }
+.title {
+    font-size: 3rem;
+    color: #0F355C;
+    font-weight: 600;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 2rem 0;
+}
+.title::before {
+    content: "";
+    width: 8rem;
+    height: .8rem;
+    background: #56EE94;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 1rem;
+}
 
 /* Header Section CSS */
 
@@ -36,7 +55,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
     background-color: #1a2d3b75;
     position: relative;
@@ -262,3 +281,100 @@ section.about{
 }
 
 /* Programs Section CSS Ends */
+
+/* Facilities Section CSS Starts */
+
+.container.facilites {
+    display: flex;
+    gap: 5rem;
+}
+
+.facilities-left {
+    flex: 1;
+}
+
+.facilities-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.thumbnails .thumbnail-library {
+    background-image: url(../images/library.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.thumbnails .thumbnail-ground {
+    background-image: url(../images/ground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.thumbnails .thumbnail-cafeteria {
+    background-image: url(../images/cafeteria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.thumbnails .thumbnail-travel {
+    background-image: url(../images/travel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.thumbnail-container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    height: 500px;
+}
+
+.thumbnails.top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+
+.thumbnails.bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+.facilities-text {
+    padding: 2rem;
+}
+
+.facilities-text p {
+    font-size: 1.5rem;
+    color: #666;
+    text-align: justify;
+    line-height: 1.6;
+}
+.thumbnail-container h3 {
+    background: green;
+    color: #fff;
+    position: relative;
+    top: 70%;
+    padding: 2rem 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/* Facilities Section CSS Ends */
