@@ -367,8 +367,9 @@ section.about{
     text-align: justify;
     line-height: 1.6;
 }
-.thumbnail-container h3 {
-    background: green;
+.thumbnail-ground h3,
+.thumbnail-cafeteria h3 {
+    background: #FFCF3F;
     color: #fff;
     position: relative;
     top: 70%;
@@ -376,5 +377,16 @@ section.about{
     font-size: 1.7rem;
     text-align: center;
 }
+.thumbnail-library h3,
+.thumbnail-travel h3 {
+    background: #6FED8C;
+    color: #fff;
+    position: relative;
+    top: 70%;
+    padding: 2rem 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
 
 /* Facilities Section CSS Ends */
