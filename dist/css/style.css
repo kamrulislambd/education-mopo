@@ -409,7 +409,11 @@ section.about{
     gap: 5rem;
 }
 .admission-left {
-    width: 60%;
+    width: 50%;
+}
+.admission-left button.enroll-btn:hover{
+    background-color: #99CB2D;
+    color: #0F355C;
 }
 
 .admission-left h2 {
@@ -424,4 +428,131 @@ section.about{
 }
 
 
+
 /* Admission Section CSS Ends */
+/* Campus Section CSS Starts */
+
+.container.campus-area{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.campus-left {
+    background-image: url(../images/campus-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: space-between;
+    object-fit: cover;
+    height: 50rem;
+}
+.campus-left .photo-1 {
+    max-width: 30%;
+    height: 50%;
+    transform: translateX(5rem);
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+.campus-left .photo-2 {
+    max-width: 45%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+.campus-right{
+    flex: 1;
+}
+.campus-content p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #575b60;
+}
+.video-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.video-icon a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #FFCF3F;
+}
+.video-icon a:hover{
+    color: rgb(240, 178, 64);
+}
+.video-icon span i {
+    border: 2px solid #FFCF3F;
+    font-size: 3rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1rem;
+    color:  #FFCF3F;
+    font-weight: 700;
+    cursor: pointer;
+}
+.video-icon span i:hover{
+    color: #FFC61B;
+    border: 2px solid rgb(240, 178, 64);
+}
+
+
+/* Campus Section CSS Ends */
+/* Card Section CSS Starts */
+
+.card-section .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cards .card-left {
+    flex: 1;
+    background: #6FED8C;
+    padding: 8rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.cards .card-right {
+    flex: 1;
+    background: #FFCF3F;
+    padding: 8rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+.card-left .card-title,
+.card-right .card-title{
+    font-size: 3rem;
+    line-height: 1.9;
+    padding: 1rem 0;
+    color: #0F355C;
+}
+ .card-left p,
+ .card-right p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #0F355C;
+    text-align: justify;
+    margin: 1rem 0;
+}
+.card-left button.enroll-btn {
+    background: #0F355C;
+    color: #fff;
+}
+.card-right button.enroll-btn {
+    background: transparent;
+    border: 2px solid #0F355C;
+}
+.card-right button.enroll-btn:hover {
+    background: #0F355C;
+    color: #fff;
+}
+
+/* Card Section CSS Ends */
